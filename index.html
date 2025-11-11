@@ -1,0 +1,52 @@
+<script>
+    // ... (Semua KONSTANTA, kecuali CACHE_KEY, CACHE_TIME) ...
+
+    // Hapus variabel data, isFetching, sortDir, els = {}
+
+    // === TEMA === (Tetap di sini karena ini fungsi browser)
+    // ... themeBtn() ...
+
+    // === TELEGRAM NOTIF ===
+    // Fungsi ini tidak lagi dipanggil dari sini, tapi biarkan saja (atau hapus jika Anda yakin).
+
+    // === FETCH + TIMEOUT === (Tetap di sini untuk tombol 'Perbarui' manual)
+    // ... fetchTimeout() ...
+
+    // === DATA & LOGIKA ===
+    // ... fetchCoins(), fetchMinute(), calcRSI(), calcCMF(), getExchange() ...
+
+    // === RENDER ===
+    function render(data) {
+        // Hapus: const sent = new Set();
+        // Hapus: Semua logika KIRIM SINYAL KE TELEGRAM
+
+        // ... (Pertahankan logika visual dan DOM) ...
+    }
+
+    // === MAIN FETCH (Sekarang Hanya untuk Update Tampilan Manual) ===
+    async function fetchData() {
+        // Hapus semua logika caching dan scheduling (localStorage, CACHE_KEY)
+        
+        // Pertahankan logika try/catch/finally dan pemanggilan fungsi fetch
+        // ...
+        
+        // PENTING: Anda harus menghapus atau memisahkan logika sinyal dan pengiriman Telegram di sini!
+        // Jika tidak, setiap kali pengguna menekan 'Perbarui', notifikasi akan terkirim dua kali (dari server dan browser).
+        
+        // ...
+        // Panggil render(data)
+        // ...
+    }
+
+    // Hapus: function schedule() {...}
+
+    // === INIT ===
+    document.addEventListener('DOMContentLoaded', () => {
+        // ... (inisialisasi els) ...
+
+        // Hapus: fetchData().finally(schedule); 
+        // Ganti dengan: fetchData(); 
+    });
+
+    window.fetchData = fetchData;
+</script>
